@@ -1,0 +1,143 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.global-nav {
+  font-size: 13px;
+  text-align: center;
+  list-style-type: none;
+  color: skyblue;
+  height: 60px;
+  background-size: contain;
+  background-color: rgb(12, 15, 45);
+  border-bottom: 1px solid #235990;
+  position: relative;
+}
+.global-nav ul {
+  padding: 10px 0;
+  margin: 0;
+}
+.global-nav li {
+  display: inline-block;
+}
+.nav-left {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.gameContainer {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  top: 50px;
+}
+.container {
+  display: grid;
+  margin-top: 80px;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+  font-family: "Varela Round", sans-serif;
+}
+.box {
+  display: flex;
+  border: 3px solid black;
+  font-size: 8vw;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-color: #FF770F;
+}
+.box:hover {
+  background-color: #FED8B1;
+}
+.borderRight0 {
+  border-right: 0;
+}
+.borderLeft0 {
+  border-left: 0;
+}
+.borderTop0 {
+  border-top: 0;
+}
+.borderBottom0 {
+  border-bottom: 0;
+}
+#reset {
+  margin-left: 30px;
+  padding: 7px;
+  width: 120px;
+  font-size: 1.1rem;
+  font-family: "Varela Round", sans-serif;
+  /* border: 3px solid rgb(168, 160, 242); */
+  color: rgb(23, 26, 57);
+  background-color: rgb(168, 160, 242);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#reset:hover {
+  color: rgb(99, 94, 152);
+  border: 3px solid rgb(85, 80, 137);
+}
+.info {
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.5rem;
+  color: lavender;
+  font-weight: bold;
+  padding: 3px 13px;
+  background-color: rgb(112, 70, 112);
+  text-align: center;
+  width: 150px;
+  float: left;
+}
+@media screen and (max-width: 950px) {
+  .container {
+    font-weight: bold;
+    grid-template-columns: repeat(3, 24vw);
+    grid-template-rows: repeat(3, 24vw);
+  }
+}
+@media screen and (min-width: 600px) {
+  .nav-right {
+    position: absolute;
+    right: auto;
+    top: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-right {
+    margin-top: 90px;
+  }
+}
+#toggleDarkModeBtn {
+  margin-left: 30px;
+  padding: 7px;
+
+  width: 120px;
+  font-size: 1.1rem;
+  font-family: "Varela Round", sans-serif;
+  color: rgb(23, 26, 57);
+  background-color: rgb(168, 160, 242);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.light-mode {
+  background-color: #E0FFFF;
+}
+.light-mode span.boxtext {
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+}
+.dark-mode span.boxtext {
+  color: white;
+}
